@@ -10,35 +10,39 @@
      
         <header>
             <h1>THE CODE REVIEW</h1>
-            <h2>Signup for our newsletter</h2>
-            <p> Get the latest news on how your code is doing right in your inbox</p>
-    
         </header>
        
-        <h2>Contact Information</h2>
-        <form>
-            <ul>
-                <li>
+    
+        <form action="index.html" method="POST">  
+            <div class="container">
+
+                <h2>Signup for our newsletter</h2>
+            <p> Get the latest news on how your code is doing right in your inbox</p>
+             <hr class="bolder">
+             
+             <hr>
+            <h2>Contact Information</h2>
+                
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="user_name" >
-                </li>
-                <li>
+                
+            
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="user_email" >
-                </li>
-                <li>
+                
+                
                     <label for="phone">Phone Number</label>
                     <input type="text" id="phone" name="user_phone" >
-                </li>
-                <li>
+                
+            
                     <label for="addresss">Street Address</label>
                     <input type="text" id="address" name="user_address" >
-                </li>
-                <li>
-                    <label for="city">Full Name</label>
+                
+                
+                    <label for="city">City</label>
                     <input type="text" id="city" name="user_city" >
-                </li>
-                <li>
+                
+                
                     <label for="state">State</label>
                     <select id="state" name="user_state">
                         <option value="nc">NC</option>
@@ -46,24 +50,36 @@
                         <option value="ws">WS</option>
                         <option value="ca">CA</option>
                       </select>
-                </li>
-                <li>
+                
+              
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zip" >
-                </li>
-            </ul>
+                   <hr>
+                        <h2>Newsletter</h2>
+                        <p>Select the newsletters you would like to receive</p>
+                        <input type="checkbox"  name="newsletter"
+                        value="html"/>HTML News<br>   
+                        <input type="checkbox"  name="newsletter"
+                        value="css"/>CSS News<br>
+                        <input type="checkbox"  name="newsletter"
+                        value="javascript"/>Javascript News 
 
-         
+                        <p>Newsletter format</p>
+                        <input type="radio" name="format" value="html format"/>HTML<br>
+                        <input type="radio"  name="format"
+                        value="plain text"/>Plain text 
+
+                        <p>Other topics you'd like to hear about</p>
+                        <textarea name="comments" cols="20" rows="4"> Enter topics</textarea><br>
+
+                        <button type="submit" class="signupbtn">Sign Up</button>
 
 
-
-
-
-
-
+            </div>
+            
         </form>
 
-
+            <footer>Copyright The Code Review</footer>
 
 
 
