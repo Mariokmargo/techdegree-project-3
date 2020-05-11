@@ -84,18 +84,30 @@ body{
 
  }
 
+.comments{
+ 
+  margin-bottom: 3em;
+  
+}
+
   button {
     background-color: #15c09b;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 25px;
+    border-radius: 3%;  
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
   }
   
+
+  .signupbtn{
+    font-weight: bold;
+    font-size: 20px;
+  }
   footer{
       text-align: center;
       margin-bottom: 12em;
+      font-weight: lighter;
   }
