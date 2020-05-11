@@ -16,14 +16,14 @@
        
     
         <form action="index.html" method="POST">  
-            <div class="container">
-
+        <div class="container">
+            <div class="intro">
                 <h2>Signup for our newsletter</h2>
-            <p> Get the latest news on how your code is doing right in your inbox</p>
-             <hr class="bolder">
-
-             <hr>
-            <h2>Contact Information</h2>
+                <p> Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+              
+            <div class="info">
+                <h3>Contact Information</h3>
                 
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="user_name" >
@@ -55,9 +55,12 @@
                 
               
                     <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user_zip" >
-                   <hr>
-                        <h2>Newsletter</h2>
+                    <input type="number" id="zip" name="user_zip" >
+                
+            </div>
+            
+                    <div class="news" >
+                        <h3>Newsletter</h3>
                         <p>Select the newsletters you would like to receive</p>
                         <input type="checkbox"  name="newsletter"
                         value="html"/>HTML News<br>   
@@ -75,11 +78,13 @@
                         <textarea name="comments" cols="20" rows="4"> Enter topics</textarea><br>
 
                         <button type="submit" class="signupbtn">Sign Up</button>
+                 </div>
+                      
 
 
-            </div>
+        </div>
             
-        </form>
+     </form>
 
             <footer>Copyright The Code Review</footer>
 
