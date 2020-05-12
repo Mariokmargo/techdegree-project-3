@@ -1,3 +1,6 @@
+/* General */
+
+
 *{
 
     font-family:'Merriweather', serif; 
@@ -9,6 +12,8 @@ body{
     background-color: whitesmoke;
 
 }
+
+/* Sections */
 
 .header{
     padding: 20px;
@@ -39,9 +44,25 @@ body{
     background: #f4f7f8;
     border-radius: 8px;
   }
+
+  .comments{
+ 
+    margin-bottom: 3em;
+    
+  }
+
+  /* Form fields  */
   fieldset{
     border: none;
   }
+
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ textarea:focus {
+
+  background-color: aquamarine;
+
+ }
 
   input[type="text"],
   input[type="email"],
@@ -63,10 +84,10 @@ body{
     margin-bottom: 30px;
   }
 
-  input:required{
+  /* input:required{
     text-align: right;
     text-transform: capitalize;
-  }
+  } */
   
   input[id="zip"]{
 
@@ -74,9 +95,13 @@ body{
     display: block;
 
   }
+
+  label,input{
+    display: inline-block;
+  }
  
   label {
-    display: block;
+    
     margin-bottom: 8px;
     color:  rgb(17, 29, 49);
   }
@@ -95,13 +120,6 @@ body{
   }
 
   
-
-.comments{
- 
-  margin-bottom: 3em;
-  
-}
-
   button {
     background-color: #15c09b;
     color: white;
@@ -124,6 +142,17 @@ body{
       font-weight: lighter;
   }
 
-  label,input{
-    display: inline-block;
+  /* Media queries */
+
+  @media (min-width: 768px) {
+    .container{
+      background-color: lightblue;
+      display: flex;
+      
+    }
+
+    .intro{
+      align-content: center;
+    }
   }
+ 
