@@ -29,47 +29,54 @@
                 
                 
                     <legend><h3>Contact Information</h3></legend>
-                    
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="user_name" placeholder="required" required>
-                    
-                
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user_email"  placeholder="required"required>
-                    
-                    
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user_phone" >
-                    
-                
-                        <label for="addresss">Street Address</label>
-                        <input type="text" id="address" name="user_address" >
-                    
-                    
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="user_city" >
-                    
-                    
-                        <label for="state">State</label>
-                        <select  id="state" name="user_state">
-                            <option value="choose-state">Choose State</option>
-                            <option value="nc">NC</option>
-                            <option value="ak">AK</option>
-                            <option value="ws">WS</option>
-                            <option value="ca">CA</option>
-                            <option value="fl">FL</option>
-                            <option value="sc">SC</option>
-                            <option value="il">IL</option>
-                            <option value="tn">TN</option>
-                            <option value="ri">RI</option>
-                            <option value="sd">SD</option>
-                            <option value="va">VA</option>
-                            <option value="wi">WI</option>
-                        </select>
-                    
-                
-                        <label for="zip">Zip Code</label>
-                        <input type="number" id="zip" name="user_zip" >
+                        <div class=user> 
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="user_name" placeholder="required" required>
+                       </div>
+
+                        <div class=user> 
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="user_email"  placeholder="required"required>
+                       </div>
+
+                        <div class=user> 
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="user_phone" >
+                        </div>
+
+                        <div class=user> 
+                            <label for="addresss">Street Address</label>
+                            <input type="text" id="address" name="user_address" ><br>
+                        </div>
+
+                        <div class=user> 
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="user_city" ><br>
+                        </div>
+
+                        <div class=user> 
+                            <label for="state">State</label>
+                            <select  id="state" name="user_state">
+                                <option value="choose-state">Choose State</option>
+                                <option value="nc">NC</option>
+                                <option value="ak">AK</option>
+                                <option value="ws">WS</option>
+                                <option value="ca">CA</option>
+                                <option value="fl">FL</option>
+                                <option value="sc">SC</option>
+                                <option value="il">IL</option>
+                                <option value="tn">TN</option>
+                                <option value="ri">RI</option>
+                                <option value="sd">SD</option>
+                                <option value="va">VA</option>
+                                <option value="wi">WI</option>
+                            </select>
+                        </div> <br>
+
+                        <div class=user> 
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="user_zip" >
+                        </div>
             </fieldset>
         </div>
                 
@@ -89,9 +96,9 @@
                             <p>Newsletter format</p>
                         
                             <input type="radio" name="opt" value="html format" id="format1"/><label for="format1">HTML</label> <br>
-                            <input type="radio"  name="opt"  value="plain text" id="format2"/><label for="format2">Plain text</label> 
+                            <input type="radio"  name="opt"  value="plain text" id="format2"/><label for="format2">Plain text</label> <br>
                             
-                            <label for="topcs">Other topics you'd like to hear about</label>
+                            <label for="topics">Other topics you'd like to hear about</label>
                             <textarea class= "comments"name="user_comments" cols="20" rows="4" id="topics"></textarea>
 
                             <button type="submit button" class="signupbtn">Sign Up</button>

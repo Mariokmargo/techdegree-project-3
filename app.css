@@ -67,7 +67,6 @@ body{
   input[type="text"],
   input[type="email"],
   input[type="tel"],
-  input[type="number"],
   textarea,
   select {
     background: rgba(255,255,255,0.1);
@@ -84,10 +83,7 @@ body{
     margin-bottom: 30px;
   }
 
-  /* input:required{
-    text-align: right;
-    text-transform: capitalize;
-  } */
+
   
   input[id="zip"]{
 
@@ -106,10 +102,7 @@ body{
     color:  rgb(17, 29, 49);
   }
 
- label[for="zip"]{
-  margin-top: 15px;
-
- }
+ 
 
 
  input[type="checkbox"],
@@ -147,12 +140,22 @@ body{
   @media (min-width: 768px) {
     .container{
       background-color: lightblue;
-      display: flex;
+      width: 70%;
       
-    }
+      }
 
-    .intro{
-      align-content: center;
-    }
+   .user{
+     display: flex;
+    
+   }
+  
+   .info label{
+
+   width: 30%;
+   }
+
+ 
+  
+   
   }
  
