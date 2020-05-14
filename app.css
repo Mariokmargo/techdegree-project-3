@@ -144,18 +144,28 @@ body{
       
       }
 
-   .user{
-     display: flex;
-    
-   }
-  
-   .info label{
-
-   width: 30%;
-   }
-
+      .info br {
+        display: none;
+      }
  
-  
+      .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
    
+ .user input,
+.user select {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.user label {
+  flex-basis: 25%;
+}
+#zip {
+  max-width: 25%;
+}
   }
  
